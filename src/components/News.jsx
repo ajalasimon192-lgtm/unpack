@@ -11,25 +11,25 @@ export const News = () => {
             id: 1,
             src: sideNews1,
             title: 'HOW TO PACK FOR A LONG DISTANCE MOVE... ',
-            desc: 'lorem ipsum details and some other shit',
+            desc: 'Make your long-distance move stress-free with smart packing tips to keep your belongings safe and organized throughout the journey.',
         },
         {
             id: 2,
             src: sideNews2,
             title: 'HOW TO SETUP YOUR HOME FOR OFFICE ',
-            desc: 'lorem ipsum details and some other shit',
+            desc: 'Create a comfortable and productive home office with simple tips for organizing your space and getting settled in.',
         },
         {
             id: 3,
             src: sideNews3,
             title: '5 WAYS TO MAKE THE PROCESS EASIER... ',
-            desc: 'lorem ipsum details and some other shit',
+            desc: `Moving doesn't have to be stresful. Discover five practical ways to save time, stay organized, and make your move smoother.`,
         },
         {
             id: 4,
             src: sideNews4,
             title: '5 BUDGET FRIENDLY LONG DISTANCE... ',
-            desc: 'lorem ipsum details and some other shit',
+            desc: 'Planning a long-distance move on a budget? Learn how to cut costs, peak eficiently,  and move your belongings without overspending.',
         },
     ]
 
@@ -95,7 +95,7 @@ export const News = () => {
                                     
                                     <div className='h-full border-b border-b-[#A7A7A7]'>
                                         <h3 className='font-bold text-5 text-[#7A7A7A] mb-4'>{news.title}</h3>
-                                        <p className='text-[#A7A7A7] text-4.5'>
+                                        <p className='text-[#A7A7A7] text-4.5 line-clamp-2'>
                                             {news.desc}
                                         </p>
                                     </div>
