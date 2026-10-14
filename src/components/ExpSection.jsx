@@ -2,7 +2,7 @@ import hero from '../assets/images/ExperienceImg.jpg'
 
 export const ExpSection = () => {
   return (
-    <div className='px-13 py-20 flex gap-20'>
+    <div className='px-13 flex gap-20'>
         <div>
             <div className='flex gap-6 justify-end items-center mb-4'>
                 <hr className='w-23 text-[#FF5E41]'/>

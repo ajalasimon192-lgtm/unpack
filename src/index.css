@@ -55,3 +55,7 @@
 .level {
     @apply h-full bg-[#7A7A7A] hover:bg-black
 }
+
+.input {
+    @apply text-[#7A7A7A] text-[16px] border-l-0 border-t-0 border-r-0 border border-b-[#BDBDBD] pb-5 outline-0
+}

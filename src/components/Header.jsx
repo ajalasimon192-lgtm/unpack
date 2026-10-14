@@ -5,11 +5,11 @@ export const Header = () => {
   return (
     <div className='relative'>
         <div className='absolute inset-0 bg-[#FF5E41]' 
-            style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 73%' }}/>
+            style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 73%)' }}/>
 
         <div className='relative h-115 bg-cover bg-center px-13 flex justify-between items-center text-white pb-24' 
             style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1)), url(${header})`
-                    ,clipPath: "polygon(0 0, 100% 0, 100% 75%, 0 100%)",}}>
+                    ,clipPath: "polygon(0 0, 100% 0, 100% 75%, 0 100%)"}}>
             
             <div className='w-100'>
                 <div className='flex items-center gap-3'>

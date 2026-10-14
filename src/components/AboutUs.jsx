@@ -3,7 +3,7 @@ import hero from '../assets/images/aboutUs.jpg'
 
 export const AboutUs = () => {
   return (
-    <div className='flex px-13 py-25 items-center gap-15'>
+    <div className='flex px-13 items-center gap-15'>
         <div className='relative roundedxl'>
             <img src={hero} alt="image of a man deliering a package" className='w-500 h-100 object-cover object-top rounded-xl'/>
             <div className='absolute -right-7 -bottom-7 bg-[#FF5E41] flex items-center gap-1.5 text-white px-4 py-5'>
