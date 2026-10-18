@@ -5,15 +5,15 @@ import background from '../assets/images/serviceImg.jpg'
 
 export const Services = () => {
   return (
-    <div className='px-13 py-8 bg-center bg-cover' style={{
+    <div className='md:px-9 lg:px-13 py-8 bg-center bg-cover' id='service' style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1)), url(${background})`
     }}>
         <div className="flex items-center justify-center text-[#FF5E41] mb-4">
             <hr className='w-25'/>
-            <p className='text-2xl ml-6 tracking-widest'>OUR SERVICES</p>
+            <p className='md:text-lg lg:text-2xl ml-6 tracking-widest'>OUR SERVICES</p>
         </div>
 
-        <h3 className='text-center text-6xl font-semibold mb-14 text-white'>PRECISE & <span className=' text-[#FF5E41] '>HARDWORKING</span></h3>
+        <h3 className='text-center md:text-[36px] lg:text-6xl font-semibold mb-14 text-white'>PRECISE & <span className=' text-[#FF5E41] '>HARDWORKING</span></h3>
 
         <div className='flex justify-around '>
             <div className='container'>

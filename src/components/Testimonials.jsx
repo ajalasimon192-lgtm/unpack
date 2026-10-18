@@ -4,10 +4,10 @@ import review2 from '../assets/images/review2.jpg'
 
 export const Testimonials = () => {
   return (
-    <div className='px-13 flex gap-10'>
-        <img src={hero} alt="" className='w-101.25 h-100 object-center object-cover' />
+    <div className='px-13 flex gap-15'>
+        <img src={hero} alt="" className='w-101.25 h-110 object-center object-cover' />
 
-        <div className='relative'>
+        <div className='relative w-full'>
             <div className='flex gap-4 flex-col'>
                 <div className='flex items-center gap-6'>
                     <hr className='text-[#FF5E41] w-21.5' />
