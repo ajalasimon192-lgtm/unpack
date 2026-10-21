@@ -20,35 +20,35 @@ export const WhyChoose = () => {
         </div>
 
         <div className='flex justify-center mt-15 relative'>
-            <img src={hero} alt="" className='w-97.5 h-114.25 object-cover'/>
+            <img src={hero} alt="" className='lg:w-97.5 h-114.25 object-cover'/>
 
-            <div className='absolute top-15 left-20 flex flex-row-reverse items-center'>
+            <div className='absolute md:-left-1 top-15 lg:left-20 flex flex-row-reverse items-center md:gap-3 lg:gap-6'>
                 <img src={profIcon} alt="an icon" className='bg-[#E9E9E9] p-2' />
-                <div className='text-right w-100 mr-6'>
-                    <p className='text-[#7A7A7A] font-semibold md:text-lg lg:text-xl'>PROFESSIONAL SERVICE</p>
+                <div className='text-right md:w-50 lg:w-100 md:tracking-tighter'>
+                    <p className='text-[#7A7A7A] font-semibold md:text-sm  lg:text-xl'>PROFESSIONAL SERVICE</p>
                     <p className='md:text-sm lg:text-lg text-[#A7A7A7]'>Our trained, uniformed crew handles every item with care, rom wrapping fragilepieces to loading the van.</p>
                 </div>
             </div>
             
-            <div className='absolute bottom-15 left-20 flex flex-row-reverse'>
-                <img src={timeIcon} alt="an icon" className='bg-[#E9E9E9] p-2' />
-                <div className='text-right w-100 mr-6'>
+            <div className='absolute md:-left-1 bottom-15 lg:left-20 flex flex-row-reverse md:gap-3 lg:gap-6 items-center'>
+                <img src={timeIcon} alt="an icon" className='bg-[#E9E9E9] p-2 h-16' />
+                <div className='text-right md:w-50 tracking-tighter lg:w-100'>
                     <p className='text-[#7A7A7A] font-semibold md:text-lg lg:text-xl'>ALWAYS ON TIME</p>
                     <p className='md:text-sm lg:text-lg text-[#A7A7A7]'>We show up when we say we will and keep to the schedule. No watitng, No delays. </p>
                 </div>
             </div>
             
-            <div className='absolute top-15 right-20 flex'>
-                <img src={hoursIcon} alt="an icon" className='bg-[#FF5E41] p-2' />
-                <div className='text-left w-100 ml-6'>
+            <div className='absolute md:top-10 lg:top-15 md:-right-1 lg:right-20 flex items-center md:gap-3 lg:gap-6'>
+                <img src={hoursIcon} alt="an icon" className='hover:bg-[#FF5E41] bg-[#E9E9E9] p-2 h-16' />
+                <div className='text-left md:w-50 lg:w-100 tracking-tighter'>
                     <p className='text-[#7A7A7A] font-semibold md:text-lg lg:text-xl'>24 HOURS EMERGENCY SERVICE</p>
                     <p className='md:text-sm lg:text-lg text-[#A7A7A7]'> Last minute move? Sudden change of plans? We're available around the clock, day and night. </p>
                 </div>
             </div>
             
-            <div className='absolute bottom-15 md:right-0 lg:right-20 flex'>
+            <div className='absolute bottom-15 md:-right-1 lg:right-20 flex md:gap-3 lg:gap-6'>
                 <img src={rateIcon} alt="an icon" className='bg-[#E9E9E9] p-2' />
-                <div className='text-left w-100 ml-6'>
+                <div className='text-left md:w-50 lg:w-100 tracking-tighter'>
                     <p className='text-[#7A7A7A] font-semibold md:text-lg lg:text-xl'>FLAT RATE FEES</p>
                     <p className='md:text-sm lg:text-lg text-[#A7A7A7]'> One clear price,agreed upfront. No hidden charges or surprise add-ons. </p>
                 </div>

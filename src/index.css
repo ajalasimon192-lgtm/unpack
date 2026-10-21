@@ -1,15 +1,27 @@
 @import 'tailwindcss';
 
+.top {
+    @apply text-[#FF5E41] text-[16px] lg:text-2xl
+}
+
+.bottom {
+    @apply text-[40px] lg:text-[75px] font-semibold
+}
+
+.sup {
+    @apply md:text-2xl lg:text-4xl
+}
+
 .link {
     @apply px-3 py-2 hover:bg-gray-400
 }
 
 .container {
-    @apply text-center relative bg-[#E9E9E9] py-10 px-5 flex flex-col justify-between items-center
+    @apply w-50 md:w-full text-center relative bg-[#E9E9E9] py-10 px-5 flex flex-col justify-between items-center
 }
 
 .container-2 {
-    @apply w-full text-center relative bg-[#FF5E41] py-10 px-5 flex flex-col justify-between items-center
+    @apply w-50 md:w-full text-center relative bg-[#FF5E41] py-10 px-5 flex flex-col justify-between items-center
 }
 
 .image {

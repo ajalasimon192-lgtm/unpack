@@ -5,17 +5,17 @@ import background from '../assets/images/serviceImg.jpg'
 
 export const Services = () => {
   return (
-    <div className='md:px-9 lg:px-13 py-8 bg-center bg-cover' id='service' style={{
+    <div className='px-7 md:px-9 lg:px-13 py-8 bg-center bg-cover' id='service' style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1)), url(${background})`
     }}>
         <div className="flex items-center justify-center text-[#FF5E41] mb-4">
-            <hr className='w-25'/>
-            <p className='md:text-lg lg:text-2xl ml-6 tracking-widest'>OUR SERVICES</p>
+            <hr className='w-21.5'/>
+            <p className='text-lg lg:text-2xl ml-6 tracking-widest'>OUR SERVICES</p>
         </div>
 
-        <h3 className='text-center md:text-[36px] lg:text-6xl font-semibold mb-14 text-white'>PRECISE & <span className=' text-[#FF5E41] '>HARDWORKING</span></h3>
+        <h3 className='text-center text-[36px] lg:text-6xl font-semibold mb-14 text-white'>PRECISE & <span className=' text-[#FF5E41] '>HARDWORKING</span></h3>
 
-        <div className='flex justify-around '>
+        <div className='flex flex-col md:flex-row justify-around items-center'>
             <div className='container'>
                 <img src={world} alt="a globe icon"  className='image'/>
                 <p className='title'>WORLD MOVING</p>
@@ -24,7 +24,7 @@ export const Services = () => {
                 </p>
                 <a href="" className='link-att'>GET STARTED</a>
             </div>
-            <div className='container-2 ml-4'>
+            <div className='container-2 md:ml-4 mt-7.5 md:mt-0'>
                 <img src={storage} alt="a globe icon"  className='image'/>
                 <p className='title2'>STORAGE UNIT</p>
                 <p className='desc2'>
@@ -32,7 +32,7 @@ export const Services = () => {
                 </p>
                 <a href="" className='link-att2'>GET STARTED</a>
             </div>
-            <div className='container ml-4'>
+            <div className='container md:ml-4 mt-7.5 md:mt-0'>
                 <img src={moving} alt="a globe icon"  className='image'/>
                 <p className='title'>MOVING KITS</p>
                 <p className='desc'>

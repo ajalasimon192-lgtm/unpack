@@ -7,22 +7,22 @@ export const Header = () => {
         <div className='absolute inset-0 bg-[#FF5E41]' 
             style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 73%)' }}/>
 
-        <div className='relative h-150 bg-cover bg-center md:px-9 lg:px-13 flex justify-between items-center text-white pb-24' 
+        <div className='relative h-150 bg-cover bg-center px-7 py-10 md:px-9 lg:px-13 flex flex-col gap-5 md:gap-0 md:justify-between items-center text-white pb-24' 
             style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1)), url(${header})`
                     ,clipPath: "polygon(0 0, 100% 0, 100% 75%, 0 100%)"}}>
             
-            <div className='w-100'>
-                <div className='flex items-center gap-3'>
-                    <hr className='w-20' />
-                    <p className='tracking-widest text-lg'>FAST & SECURE MOVE</p>
+            <div className='w-full md:w-100 flex flex-col self-center text-center'>
+                <div className='flex items-center self-center gap-6'>
+                    <hr className='w-21.5' />
+                    <p className='tracking-[10px] text-lg'>FAST & SECURE MOVE</p>
                 </div>
 
-                <p className='font-semibold md:text-[60px] lg:text-7xl leading-18 mt-3 pb-10'>
+                <p className='font-semibold text-[60px] lg:text-7xl leading-18 mt-3 pb-10'>
                     MOVING WAS NEVER <span className='text-[#FF5E41]'>SO EASY</span>
                 </p>
 
-                <div className='flex items-center cursor-pointer'>
-                        <a href='' className='md:text-xl lg:text-xl font-semibold hover:underline'>
+                <div className='flex items-center cursor-pointer self-center'>
+                        <a href='' className='text-xl lg:text-xl font-semibold hover:underline'>
                             GET STARTED
                         </a>
                         <a href="" className='text-3xl bg-[#FF5E41] opacity-60 text-white px-2 rounded-4xl'>
@@ -34,18 +34,18 @@ export const Header = () => {
                 
             </div>
 
-            <div className='flex flex-col justify-between md:gap-4 lg:gap-5 text-right'>
+            <div className='flex md:flex-col w-full justify-between md:gap-4 lg:gap-5 text-center md:text-right'>
                 <div>
-                    <p className='text-[#FF5E41] md:text-[16px] lg:text-xl'>Relocation</p>
-                    <p className='md:text-[40px] lg:text-5xl font-semibold'>80<sup className='md:text-2xl'>+</sup></p>
+                    <p className='top'>RELOCATION</p>
+                    <p className='bottom'>80<sup className='sup'>+</sup></p>
                 </div>
                 <div>
-                    <p className='text-[#FF5E41] md:text-[16px] lg:text-xl'>CLIENT</p>
-                    <p className='md:text-[40px] lg:text-5xl font-semibold'>12<sup className='md:text-2xl'>K</sup></p>
+                    <p className='top'>CLIENT</p>
+                    <p className='bottom'>12<sup className='sup'>K</sup></p>
                 </div>
                 <div>
-                    <p className='text-[#FF5E41] md:text-[16px] lg:text-xl'>MOVING HOURS</p>
-                    <p className='md:text-[40px] lg:text-5xl font-semibold'>150<sup className='md:text-2xl'>+</sup></p>
+                    <p className='top'>MOVING HOURS</p>
+                    <p className='bottom'>150<sup className='sup'>+</sup></p>
                 </div>
             </div>
         </div>
