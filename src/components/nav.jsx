@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import logo from '../assets/images/logo.svg'
-import Logo from '../assets/images/Logoforsmall.svg'
+import logo from '../assets/images/logo.webp'
+import Logo from '../assets/images/Logoforsmall.webp'
+import { FaChevronUp, FaChevronDown, FaBars } from 'react-icons/fa';
 
 export const Nav = () => {
 
@@ -31,7 +32,7 @@ const closeNav = () => {
             <a href="#about" className=' hover:text-[#FF5E41] cursor-pointer'>ABOUT US</a>
             <a href="#service" className=' hover:text-[#FF5E41] cursor-pointer'>SERVICE</a>
             <div className='relative'>
-                <p onClick={toggle} className=' hover:text-[#FF5E41] cursor-pointer'>FEATURE <span> {isOpen ? 'up' : 'down'} </span></p>
+                <p onClick={toggle} className=' hover:text-[#FF5E41] cursor-pointer flex items-center gap-1'>FEATURE <span> {isOpen ? <FaChevronUp /> : <FaChevronDown />} </span></p>
                 {isOpen && (
                     <div className="flex flex-col w-25 bg-black text-white absolute top-15.5 z-10">
                         <a href="#" className="link">FAQ</a>
@@ -45,7 +46,7 @@ const closeNav = () => {
         </div>
 
         <div className='lg:hidden'>
-            <button onClick={toggleNav} className={isNavOpen ? 'text-4xl font-semibold' : 'bg-transparent text-3xl' } >{isNavOpen ? 'X' : 'O' }</button>
+            <button onClick={toggleNav} className={isNavOpen ? 'text-4xl font-semibold' : 'bg-transparent text-3xl' } >{isNavOpen ? 'X' : <FaBars /> }</button>
 
             {isNavOpen && (
                 <div className='absolute top-20 left-0 z-10 bg-white w-full grid grid-cols-1 text-xl text-center gap-4 pt-[50.5px]'>
@@ -53,7 +54,7 @@ const closeNav = () => {
                     <a href="#about" onClick={closeNav} className=' hover:text-[#FF5E41] cursor-pointer'>ABOUT US</a>
                     <a href="#service" onClick={closeNav} className=' hover:text-[#FF5E41] cursor-pointer'>SERVICES</a>
                     <div className='relative'>
-                        <p onClick={toggle} className=' hover:text-black cursor-pointer'>FEATURE <span> {isOpen ? 'up' : 'down'} </span></p>
+                        <p onClick={toggle} className=' hover:text-black cursor-pointer flex items-center justify-center'>FEATURE <span> {isOpen ? <FaChevronUp /> : <FaChevronDown /> } </span></p>
                         {isOpen && (
                             <div className="grid grid-cols-1 gap-4.5 bg-white text-[#A7A7A7]">
                                 <a href="#" onClick={closeNav} className="mt-4.5 hover:text-[#FF5E41]">FAQ</a>

@@ -1,9 +1,9 @@
-import React from 'react'
-import hero from '../assets/images/aboutUs.jpg'
+import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa' 
+import hero from '../assets/images/aboutUs.webp'
 
 export const AboutUs = () => {
   return (
-    <div className='flex flex-col md:flex-col px-7 md:px-9 lg:px-13 items-center gap-15' id='about'>
+    <div className='flex flex-col md:flex-row px-7 md:px-9 lg:px-13 items-center gap-15' id='about'>
         <div className='relative roundedxl'>
             <img src={hero} alt="image of a man deliering a package" className='md:w-500 h-100 object-cover object-top rounded-xl md:h'/>
             <div className='absolute -right-7 -bottom-7 bg-[#FF5E41] flex items-center gap-1.5 text-white px-4 py-5'>
@@ -28,9 +28,11 @@ export const AboutUs = () => {
                 and on time
             </p>
             
-            <div className="icons mt-14 text-[#A7A7A7] float-right">
+            <div className="flex gap-4 mt-14 text-[#A7A7A7] float-right">
                 {/* icons twitter, fb, ig */}
-                <p>Icon</p>
+                <FaTwitter className='abt-icons' />
+                <FaInstagram className='abt-icons' />
+                <FaFacebook className='abt-icons' />
             </div>
         </div>
     </div>

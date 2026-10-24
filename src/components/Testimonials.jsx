@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import hero from '../assets/images/testimonials.jpg'
-import review1 from '../assets/images/review1.jpg'
-import review2 from '../assets/images/review2.jpg'
+import hero from '../assets/images/testimonials.webp'
+import review1 from '../assets/images/review1.webp'
+import review2 from '../assets/images/review2.webp'
 
 const reviews = [
     {
@@ -22,13 +22,13 @@ const reviews = [
 
     const Review = ({ review }) => (
     <div className="flex flex-col gap-3">
-        <p className="text-[#FFC952] md:text-center lg:text-left" aria-label="5 out of 5 stars">
+        <p className="text-[#FFC952] text-center lg:text-left" aria-label="5 out of 5 stars">
         ⭐⭐⭐⭐⭐
         </p>
 
-        <p className="text-[16px] text-[#A7A7A7] md:text-center lg:text-left">{review.quote}</p>
+        <p className="text-[16px] text-[#A7A7A7] text-center lg:text-left">{review.quote}</p>
 
-        <div className="flex items-center gap-3 md:justify-center lg:justify-start">
+        <div className="flex items-center gap-3 justify-center lg:justify-start">
         <img
             src={review.image}
             alt={`${review.name}, reviewer`}
@@ -57,23 +57,23 @@ export const Testimonials = () => {
             <img
                 src={hero}
                 alt=""
-                className="h-72 w-full md:w-70 object-cover object-center md:h-96 lg:h-110 lg:w-101.25 lg:shrink-0"
+                className="hidden md:inline h-72 w-full md:w-70 object-cover object-center md:h-96 lg:h-110 lg:w-101.25 lg:shrink-0"
             />
 
             <div className="relative w-full lg:min-h-110">
                 <div className="flex flex-col gap-4">
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center justify-center gap-6">
                         <hr className="w-21.5 text-[#FF5E41]" />
-                        <p className="tracking-widest text-[#FF5E41]">TESTIMONIALS</p>
+                        <p className="tracking-widest text-[#FF5E41] text-lg">TESTIMONIALS</p>
                     </div>
 
-                    <h3 className="text-3xl font-semibold md:text-4xl lg:text-6xl">
+                    <h3 className="text-center md:text-left text-4xl font-semibold md:text-4xl lg:text-6xl">
                         OUR <span className="text-[#FF5E41]">HAPPY</span> CUSTOMERS
                     </h3>
                 </div>
 
                 {/* Slider for small and medium screens */}
-                <div className=" relative w-116 md:-left-10 md:-bottom-1.5 mt-6 bg-[#E9E9E9] px-10 py-8 lg:hidden">
+                <div className=" relative md:w-116 md:-left-10 md:-bottom-1.5 mt-6 bg-[#E9E9E9] px-10 py-8 lg:hidden">
                     <button
                         type="button"
                         onClick={() => changeReview(-1)}

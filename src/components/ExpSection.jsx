@@ -1,19 +1,16 @@
-import hero from '../assets/images/ExperienceImg.jpg'
-import warehousing from '../assets/images/warehousing.svg'
-import packaging from '../assets/images/packaging.svg'
-import shipping from '../assets/images/shipping.svg'
-import reliability from '../assets/images/reliability.svg'
+import hero from '../assets/images/ExperienceImg.webp'
+import { FaWarehouse, FaShippingFast, FaBoxOpen, FaShieldAlt } from 'react-icons/fa'
 
 export const ExpSection = () => {
   return (
-    <div className='md:px-8 lg:px-13 flex gap-20'>
+    <div className='px-7 md:px-8 lg:px-13 flex flex-col md:flex-row gap-20'>
         <div>
-            <div className='flex gap-6 justify-end items-center mb-4'>
+            <div className='flex gap-6 justify-center md:justify-end items-center mb-4'>
                 <hr className='w-21.5 text-[#FF5E41]'/>
-                <p className='md:text-lg lg:text-2xl tracking-widest text-[#FF5E41]'>OUR EXPERIENCE</p>
+                <p className='text-lg lg:text-2xl tracking-widest text-[#FF5E41]'>OUR EXPERIENCE</p>
             </div>
 
-            <h3 className='font-semibold md:text-4xl lg:text-6xl text-right w-full'>
+            <h3 className='font-semibold text-4xl lg:text-6xl text-center md:text-right w-full'>
                 LET THE NUMBERS <span className='text-[#FF5E41]'>SPEAK</span>
             </h3>
 
@@ -21,7 +18,7 @@ export const ExpSection = () => {
                 <div className='flex items-center w-full hover:text-[#FF5E41]'>
                     <span className='pr-5'>
                         {/* icon */} 
-                        ⭐
+                        <FaWarehouse className='text-3xl' />
                     </span>
                     <div className='cont-stat'>
                         <div className='stat'>
@@ -37,7 +34,7 @@ export const ExpSection = () => {
                 <div className='flex items-center w-full hover:text-[#FF5E41]'>
                     <span className='pr-5'>
                         {/* icon */} 
-                        🌞
+                        <FaBoxOpen className='text-3xl' />
                     </span>
                     <div className='cont-stat'>
                         <div className='stat'>
@@ -53,7 +50,7 @@ export const ExpSection = () => {
                 <div className='flex items-center w-full hover:text-[#FF5E41]'>
                     <span className='pr-5'>
                         {/* icon */} 
-                        🌞
+                        <FaShippingFast className='text-3xl' />
                     </span>
                     <div className='cont-stat'>
                         <div className='stat'>
@@ -69,7 +66,7 @@ export const ExpSection = () => {
                 <div className='flex items-center w-full hover:text-[#FF5E41]'>
                     <span className='pr-5'>
                         {/* icon */} 
-                        🌞
+                        <FaShieldAlt className='text-3xl' />
                     </span>
                     <div className='cont-stat'>
                         <div className='stat'>
@@ -83,7 +80,7 @@ export const ExpSection = () => {
                 </div>
             </div>
         </div>
-        <img src={hero} alt="Hero image" className='w-1/2' />
+        <img src={hero} alt="Hero image" className='w-80 h-100 self-center md:w-1/2' />
     </div>
   )
 }

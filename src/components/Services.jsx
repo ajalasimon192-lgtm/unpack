@@ -1,7 +1,7 @@
-import world from '../assets/images/worldMoving.svg'
-import storage from '../assets/images/storageUnits.png'
-import moving from '../assets/images/MovingKits.svg'
-import background from '../assets/images/serviceImg.jpg'
+import world from '../assets/images/worldMoving.webp'
+import storage from '../assets/images/storageUnits.webp'
+import moving from '../assets/images/MovingKits.webp'
+import background from '../assets/images/serviceImg.webp'
 
 export const Services = () => {
   return (
@@ -24,7 +24,7 @@ export const Services = () => {
                 </p>
                 <a href="" className='link-att'>GET STARTED</a>
             </div>
-            <div className='container-2 md:ml-4 mt-7.5 md:mt-0'>
+            <div className='container-2 md:ml-4 mt-10 md:mt-0'>
                 <img src={storage} alt="a globe icon"  className='image'/>
                 <p className='title2'>STORAGE UNIT</p>
                 <p className='desc2'>
@@ -32,7 +32,7 @@ export const Services = () => {
                 </p>
                 <a href="" className='link-att2'>GET STARTED</a>
             </div>
-            <div className='container md:ml-4 mt-7.5 md:mt-0'>
+            <div className='container md:ml-4 mt-10 md:mt-0'>
                 <img src={moving} alt="a globe icon"  className='image'/>
                 <p className='title'>MOVING KITS</p>
                 <p className='desc'>
