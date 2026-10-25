@@ -1,4 +1,4 @@
-import React from 'react'
+import { FaAngleRight } from 'react-icons/fa'
 import header from '../assets/images/headerImg.webp'
 
 export const Header = () => {
@@ -25,9 +25,9 @@ export const Header = () => {
                         <a href='' className='text-xl lg:text-xl font-semibold hover:underline'>
                             GET STARTED
                         </a>
-                        <a href="" className='text-3xl bg-[#FF5E41] opacity-60 text-white px-2 rounded-4xl'>
+                        <a href="" className='text-3xl bg-[#FF5E41] opacity-60 text-white p-2 rounded-4xl'>
                             {/* TO ADD ICON */}
-                            &gt;
+                            <FaAngleRight />
                         </a>
                 </div>
                 {/* to add icon <a href="" className='flex items-'>GET STARTED <span className='text-white  px-3 bg-[#FF5E41] text-3xl rounded-4xl'>&gt;</span> </a> */}

@@ -1,4 +1,6 @@
 import hero from '../assets/images/banner1.webp'
+import { FaAngleRight } from 'react-icons/fa'
+
 
 export const Ad = () => {
   return (
@@ -21,9 +23,9 @@ export const Ad = () => {
                         <a href='tel:+2348105452155' className='text-[16px] lg:text-xl font-semibold hover:underline'>
                             CALL US NOW
                         </a>
-                        <a href="" className='text-xl bg-[#FF5E41] text-white px-3 py-1 rounded-4xl'>
+                        <a href="" className='text-2xl bg-[#FF5E41] text-white px-2 py-2 rounded-4xl'>
                             {/* TO ADD ICON */}
-                            &gt;
+                            <FaAngleRight  />
                         </a>
                     </div>
                 </div>

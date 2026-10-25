@@ -3,6 +3,7 @@ import logo from '../assets/images/logo.webp'
 import Logo from '../assets/images/Logoforsmall.webp'
 import { FaChevronUp, FaChevronDown, FaBars } from 'react-icons/fa';
 
+
 export const Nav = () => {
 
   const [isOpen, setIsOpen] = useState(false);

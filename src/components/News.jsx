@@ -4,6 +4,7 @@ import sideNews1  from '../assets/images/sideNews1.webp'
 import sideNews2 from '../assets/images/SideNews2.webp'
 import sideNews3  from '../assets/images/sideNews3.webp'
 import sideNews4  from '../assets/images/sideNews4.webp'
+import { FaAngleRight } from 'react-icons/fa'
 
 export const News = () => {
     const newsItems = [ 
@@ -42,13 +43,13 @@ export const News = () => {
 
             <div className='flex justify-between'>
                 <p className='text-4xl lg:text-6xl font-semibold'>RECENTLY <span className='text-[#FF5E41]'>UPDATED</span></p>
-                <div className='flex md:items-center tracking-tight  cursor-pointer'>
+                <div className='flex items-center tracking-tight  cursor-pointer'>
                     <a href='' className='md:text-[16px] lg:text-xl text-[#A7A7A7] hover:underline'>
                         DISCOVER MORE
                     </a>
-                    <a href="" className='text-xl bg-[#D3D3D3] text-[#A7A7A7] px-3 py-1 rounded-4xl'>
+                    <a href="" className='text-xl bg-[#D3D3D3] text-[#A7A7A7] px-3 py-3 rounded-4xl flex items-center'>
                         {/* TO ADD ICON */}
-                        &gt;
+                        <FaAngleRight />
                     </a>
                 </div>
             </div>
@@ -75,7 +76,7 @@ export const News = () => {
                                     <p className='text-[#A7A7A7] text-3.5'>JOEL CALRNS</p>
                                 </div>
 
-                                <div className='md:hidden lg:inline'>
+                                <div className='hidden lg:inline'>
                                     {/* to add calendar icon */}
                                     <p className='text-[#A7A7A7]'>18 DECEMBER 2023</p>
                                 </div>
