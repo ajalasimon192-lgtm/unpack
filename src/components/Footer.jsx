@@ -1,5 +1,5 @@
 import logo from '../assets/images/logo.webp';
-import { FaEnvelope, FaPhone, FaMap, FaFacebook, FaInstagram, FaPinterest, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaAngleRight, FaPhone, FaMap, FaFacebook, FaInstagram, FaPinterest, FaLinkedin } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
@@ -24,7 +24,7 @@ export const Footer = () => {
                     <input type="date" placeholder='DATE' className='input' />
                 </div>
                 <textarea name="description" placeholder='SERVICE DESCRIPTION' className='border-b border-b-[#BDBDBD] w-full h-20 outline-0 resize-none text-[#7A7A7A]' ></textarea>
-                <div className='flex items-center justify-center md:text-[16px] lg:text-xl font-semibold lg:float-end mt-5'>BOOKING NOW <a href='' className='bg-[#FF5E41] px-5 py-3 rounded-4xl text'>&gt;</a></div>
+                <div className='flex items-center justify-center md:text-[16px] lg:text-xl font-semibold lg:float-end mt-5'>BOOKING NOW <a href='' className='bg-[#FF5E41] px-3 py-3 rounded-4xl text'><FaAngleRight /></a></div>
             </form>
         </div>
 
