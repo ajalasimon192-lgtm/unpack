@@ -62,7 +62,7 @@ export const Testimonials = () => {
 
             <div className="relative w-full lg:min-h-110">
                 <div className="flex flex-col gap-4">
-                    <div className="flex items-center justify-center gap-6">
+                    <div className="flex items-center justify-center md:self-start gap-6">
                         <hr className="w-21.5 text-[#FF5E41]" />
                         <p className="tracking-widest text-[#FF5E41] text-lg">TESTIMONIALS</p>
                     </div>
