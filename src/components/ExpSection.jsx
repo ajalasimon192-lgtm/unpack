@@ -4,20 +4,19 @@ import { FaWarehouse, FaShippingFast, FaBoxOpen, FaShieldAlt } from 'react-icons
 export const ExpSection = () => {
   return (
     <div className='px-7 md:px-8 lg:px-13 flex flex-col md:flex-row gap-20'>
-        <div>
-            <div className='flex gap-6 justify-center md:justify-end items-center mb-4'>
+        <div className='flex flex-col'>
+            <div className='flex gap-6 h-fit justify-center md:justify-end items-center mb-4'>
                 <hr className='w-21.5 text-[#FF5E41]'/>
                 <p className='text-lg lg:text-2xl tracking-widest text-[#FF5E41]'>OUR EXPERIENCE</p>
             </div>
 
-            <h3 className='font-semibold text-4xl lg:text-6xl text-center md:text-right w-full'>
+            <h3 className='font-semibold h-fit text-4xl lg:text-6xl text-center md:text-right w-full mb-11'>
                 LET THE NUMBERS <span className='text-[#FF5E41]'>SPEAK</span>
             </h3>
 
-            <div className='mt-11 w-full flex flex-col gap-3.5'>
+            <div className='flex flex-1 justify-between flex-col'>
                 <div className='flex items-center w-full hover:text-[#FF5E41]'>
                     <span className='pr-5'>
-                        {/* icon */} 
                         <FaWarehouse className='text-3xl' />
                     </span>
                     <div className='cont-stat'>
@@ -33,7 +32,6 @@ export const ExpSection = () => {
 
                 <div className='flex items-center w-full hover:text-[#FF5E41]'>
                     <span className='pr-5'>
-                        {/* icon */} 
                         <FaBoxOpen className='text-3xl' />
                     </span>
                     <div className='cont-stat'>
@@ -80,7 +78,7 @@ export const ExpSection = () => {
                 </div>
             </div>
         </div>
-        <img src={hero} alt="Hero image" className='w-80 h-100 self-center md:w-1/2' />
+        <img src={hero} alt="Hero image" className='w-80 h-100 object-cover self-center md:w-1/2' />
     </div>
   )
 }

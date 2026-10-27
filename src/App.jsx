@@ -12,7 +12,7 @@ import { Footer } from "./components/Footer"
 function App() {
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen bg-white">
       <Nav />
       <div className="flex flex-col gap-30">
         <Header />

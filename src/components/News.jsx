@@ -4,7 +4,7 @@ import sideNews1  from '../assets/images/sideNews1.webp'
 import sideNews2 from '../assets/images/SideNews2.webp'
 import sideNews3  from '../assets/images/sideNews3.webp'
 import sideNews4  from '../assets/images/sideNews4.webp'
-import { FaAngleRight } from 'react-icons/fa'
+import { FaAngleRight, FaCalendarAlt } from 'react-icons/fa'
 
 export const News = () => {
     const newsItems = [ 
@@ -44,7 +44,7 @@ export const News = () => {
             <div className='flex justify-between'>
                 <p className='text-4xl lg:text-6xl font-semibold'>RECENTLY <span className='text-[#FF5E41]'>UPDATED</span></p>
                 <div className='flex items-center tracking-tight  cursor-pointer'>
-                    <a href='' className='md:text-[16px] lg:text-xl text-[#A7A7A7] hover:underline'>
+                    <a href='' className='text-xs md:text-[16px] lg:text-xl text-[#A7A7A7] hover:underline'>
                         DISCOVER MORE
                     </a>
                     <a href="" className='text-xl bg-[#D3D3D3] text-[#A7A7A7] px-3 py-3 rounded-4xl flex items-center'>
@@ -58,7 +58,7 @@ export const News = () => {
                 <div className='md:w-3/5'>
                     <div className='relative'>
                         <img src={ mainNews } alt="a pic of a man holding a clipboard" className='' />
-                        <p className='absolute bottom-10 left-10 border border-[#FF5E41] px-4.5 py-3.5 text-3.5 text-[#FFFFFF]'>COMMERCIAL MOVING</p>
+                        <p className='absolute bottom-5 left-5 md:bottom-10 md:left-10 border border-[#FF5E41] px-4.5 py-3.5 text-3.5 text-[#FFFFFF]'>COMMERCIAL MOVING</p>
                     </div>
 
                     <div className='mt-8'>
@@ -70,19 +70,20 @@ export const News = () => {
                         <hr className='text-[#A7A7A7] mt-4  mb-4 w-full' />
 
                         <div className='flex justify-between items-center'>
-                            <div className='grid grid-cols-2 gap-7.25 items-center'>
+                            <div className='grid lg:grid-cols-2 gap-7.25 items-center'>
                                 <div className='flex items-center lg:border-r lg:pr-7.5 lg:border-[#BDBDBD]  gap-3'>
                                     <img src={ review1 } alt="image of the creator" className='w-10 rounded-2xl' />
                                     <p className='text-[#A7A7A7] text-3.5'>JOEL CALRNS</p>
                                 </div>
 
-                                <div className='hidden lg:inline'>
+                                <div className='hidden lg:flex items-center gap-2'>
                                     {/* to add calendar icon */}
+                                    <FaCalendarAlt className='text-[#A7A7A7]' />
                                     <p className='text-[#A7A7A7]'>18 DECEMBER 2023</p>
                                 </div>
                             </div>
 
-                            <a href="" className='text-[#FF5E41] hover:underline'>READ MORE</a>
+                            <a href="" className='text-[#FF5E41] hover:underline w-fit'>READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +93,7 @@ export const News = () => {
                         newsItems.map((news) => {
                             return (
                                 <div key={news.id} className='flex gap-6 lg:gap-9.75 mt-4'>
-                                    <img src={news.src} alt="" className='w-20 md:w-25 md:object-cover lg:w-50'/>
+                                    <img src={news.src} alt="" className='w-20 object-cover md:w-25 md:object-cover lg:w-50'/>
                                     
                                     <div className='h-full border-b border-b-[#A7A7A7] w-full pb-3'>
                                         <h3 className='font-semibold text-[16px] lg:text-xl text-[#7A7A7A] mb-4'>{news.title}</h3>

@@ -22,7 +22,7 @@ const closeNav = () => {
   }
 
   return (
-    <div className={ isNavOpen ? 'bg-white text-black flex justify-between items-center border-b border-{#BDBDBD} px-13 py-4' : 'bg-black text-white flex justify-between items-center border-b border-{#BDBDBD} px-13 py-4' }>
+    <div className={ isNavOpen ? 'bg-white text-black flex justify-between items-center border-b border-{#BDBDBD} px-7 md:px-9 lg:px-13 py-4' : 'bg-black text-white flex justify-between items-center border-b border-{#BDBDBD} px-7 md:px-9 lg:px-13 py-4' }>
         <div className='flex items-center'>
             <img src={isNavOpen ? Logo : logo} alt="Logo image for the unpack delivery service" className='w-12'/>
             <p className='font-bold text-3xl'><span className='text-[#FF5E41]'>UN</span>PACK</p>

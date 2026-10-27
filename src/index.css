@@ -5,11 +5,11 @@
 }
 
 .bottom {
-    @apply text-[40px] lg:text-[70px] font-semibold
+    @apply text-[40px] lg:text-[75px] font-semibold
 }
 
 .sup {
-    @apply md:text-2xl lg:text-4xl
+    @apply md:text-2xl lg:text-4xl font-semibold
 }
 
 .link {

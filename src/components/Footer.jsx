@@ -35,8 +35,8 @@ export const Footer = () => {
             <div className='bg-black w-full px-7 md:px-9 lg:px-13 pt-100 relative'
                     style={{ clipPath: "polygon(0 0, 100% 30%, 100% 100%, 0 100%)"}}>
                 <div className='grid md:grid-cols-3 gap-10 md:gap-30 mb-10'>
-                    <div className='grid grid-cols-1 gap-5.5'>
-                        <div className='flex items-center mt-10'>
+                    <div className='grid grid-cols-1 gap-5.5 mt-20 md:mt-0'>
+                        <div className='flex items-center'>
                             <img src={logo} alt="Logo image for the unpack delivery service" className='w-12'/>
                             <p className='font-bold text-white text-3xl'><span className='text-[#FF5E41]'>UN</span>PACK</p>
                         </div>
